@@ -1,0 +1,60 @@
+.filter {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 41px;
+  @media screen and (max-width: 754px){
+    flex-direction: column;
+  }
+}
+.rail-select {
+
+  position: relative;
+
+  select {
+    border: none;
+    outline: none;
+    padding-left: 16px;
+    position: relative;
+    font-size: 16px;
+    background: #F2F2F2;
+    height: 40px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+  }
+  .form-control {
+    width: 288px;
+    @media screen and (max-width: 754px){
+      width: 100%;
+    }
+  }
+  .select-side {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+
+  }
+}
+.filter_item {
+  margin-right: 20px;
+}
+.filter_name {
+  padding-left: 16px;
+
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+.select {
+  border: none;
+
+  width: 288px;
+  height: 40px;
+  padding-left: 16px;
+  font-size: 14px;
+  line-height: 150%;
+
+}
+
