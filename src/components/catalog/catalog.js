@@ -25,8 +25,8 @@ class CatalogItems extends Component {
                     <div className="item_name">{itemsElems[item].name}</div>
                     <div className="item_footer">
                         <div className="price">
-                            <div className="item_new-price">{itemsElems[item].price.current_price}</div>
-                            <div className="item_old-price">{itemsElems[item].price.old_price}</div>
+                            <div className="item_new-price">{Math.floor(itemsElems[item].price.current_price)}</div>
+                            <div className="item_old-price">{Math.floor(itemsElems[item].price.old_price)}</div>
                         </div>
                         <div className="buttons">
                             <div className="item_cart-btn">
